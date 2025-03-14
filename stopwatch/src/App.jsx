@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <h1>Stopwatch</h1>
-      <span>Time: {time.minutes < 10 ? `0${time.minutes}` : time.minutes}:
+      <span>Time: {time.minutes}:
       {time.seconds < 10 ? `0${time.seconds}` : time.seconds}</span>
       {isStarted ? <button onClick={stopTimer}>Stop</button> : <button onClick={startTimer}>Start</button>}
       <button onClick={resetTimer}>Reset</button>
